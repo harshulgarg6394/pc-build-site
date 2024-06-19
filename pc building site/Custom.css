@@ -1,0 +1,56 @@
+*{
+    margin :0;
+    padding:0;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+}
+
+body header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 4vh;
+    margin: auto;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    font-family: cursive;
+    color: #d1d1d1;
+    padding: 0 10px;
+    margin: 2vw;
+    letter-spacing: 0.5px;
+    font-size: large;
+
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 5%;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #fff;
+}
+
+nav a:hover::after {
+    width: 95%;
+}
+
+main{
+    background: url("./Aboutusbkg.jpg") no-repeat;
+    height: 95vh;
+    width: 100vw;
+    background-size: cover;
+}
